@@ -162,3 +162,43 @@ Mide el error en la misma magnitud del dato (puntos de Tasa de Incidencia).
 Propósito: Proveer transparencia y auditoría continua sobre la precisión del algoritmo matemático. Evita que el equipo clínico confíe a ciegas en un modelo descalibrado.
 
 Ejemplo de Aplicación en el Proyecto: El sistema presenta una tarjeta denominada "Desviación del Modelo". Si proyectamos el comportamiento de la Bronquiolitis y el sistema indica un MAPE de ±12% y un MAE de ±3.5 puntos, el encargado de visualización comprende que la proyección de la semana "Peak" tiene un margen de error mínimo y altamente aceptable para la planificación de camas pediátricas. Si un modelo arroja un MAPE > 40%, el sistema lo resalta en color naranja/rojo, advirtiendo que la volatilidad del virus hace que la predicción sea menos confiable.
+
+# Hallazgos relevantes
+
+El sistema analítico presentará los hallazgos clave correspondientes al año 2025, utilizando un conjunto de datos anual completo. Este enfoque metodológico es totalmente replicable para la proyección del año 2026.
+
+<img width="1250" height="573" alt="image" src="https://github.com/user-attachments/assets/3667dd74-86df-462c-b266-294d428da587" />
+
+* El análisis del canal endémico anual revela que las líneas de tendencia de la demanda asistencial se mantienen predominantemente en la zona epidemiológica de éxito.
+<img width="1281" height="403" alt="image" src="https://github.com/user-attachments/assets/c1da9c43-75ed-4d12-bdd9-edf2d055284c" />
+
+* El análisis mediante el indicador P-Score muestra que, semana a semana, existe un margen de holgura en la carga asistencial en comparación con la media histórica esperada.
+
+<img width="1811" height="750" alt="image" src="https://github.com/user-attachments/assets/35514516-1b38-45b6-a911-97de0d4d0408" />
+
+Utilizando las tasas poblacionales ajustadas, el análisis permite establecer el ranking de las comunas con mayor presión asistencial, obteniendo los siguientes resultados:
+1° Penco con una tasa de 6.05
+2° Tomé con una tasa de 3.50
+3° Hualpén con una tasa de 3.19
+
+La carga asistencial por enfermedades, quedando en:
+1° IRA Alta con tasa de 17.93
+2° Bronquiolitis con tasa de 10.75
+3° Neumonía 1.64
+
+y los establecimientos con mayor carga, quedando en top 3:
+1° SAR Penco con tasa de 7.64
+2° Hospital Las Higueras con tasa de 6.49
+3° SAR Dr. Alberto Reyes con tasa de 5.48
+
+<img width="1817" height="420" alt="image" src="https://github.com/user-attachments/assets/ce22460c-9208-48e1-b42c-91dfa2f945b4" />
+
+Adicionalmente, el sistema permite realizar observaciones detalladas a nivel etario y por perfil clínico, contrastando en las mismas visualizaciones la carga absorbida por la atención hospitalaria versus la atención primaria de urgencia.
+
+<img width="1811" height="551" alt="image" src="https://github.com/user-attachments/assets/e6b2df3d-4d4a-40a6-9882-6ff266464f6a" />
+
+Las salidas del modelo predictivo se estructuran por semana epidemiológica, integrando múltiples capas analíticas en una única visualización. El gráfico contrasta el límite máximo histórico esperado (umbral Q3) con la tasa real registrada (puntos negros). Simultáneamente, la proyección de la carga asistencial anual se despliega mediante un diagrama de barras codificado por color: azul para volúmenes bajo control y rojo para advertir excesos que perforan el umbral crítico.
+
+La información consolidada en cada visualización proporciona una visión panorámica y en tiempo real del Servicio de Salud en su totalidad. Este ecosistema analítico dota a la directiva de herramientas fundamentadas en datos para optimizar la toma de decisiones críticas, tales como la distribución eficiente de recursos financieros y humanos, la identificación temprana de las semanas peak, y la anticipación de las causas clínicas que exigirán un mayor abastecimiento de insumos y refuerzo de la dotación médica.
+
+
