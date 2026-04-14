@@ -273,3 +273,7 @@ La plataforma destaca por su alta reproducibilidad y adaptabilidad. Con ajustes 
 
 Además, aunque el sistema se entrega actualmente empaquetado en un formato autoejecutable (.exe) para facilitar su uso, el equipo administrador posee total libertad para definir cómo desea gestionar, distribuir y desplegar esta herramienta tecnológica en el futuro.
 
+# Autoría
+
+Autor: Camilo Garcés
+Dirección del proyecto: Camila Pallalever
