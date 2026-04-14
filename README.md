@@ -100,10 +100,6 @@ El tiempo es tratado como una variable crítica para entender la dinámica de pr
 
 Para dotar al sistema de capacidad prospectiva, se desarrolló un motor de Regresión Armónica Ponderada, diseñado específicamente para modelar epidemias respiratorias.
 
-La ecuación base del modelo es:
-
-$$y(t) = \beta_0 + \beta_1 t + \beta_2 \sin\left(\frac{2\pi t}{P}\right) + \beta_3 \cos\left(\frac{2\pi t}{P}\right) + \beta_4 \sin\left(\frac{4\pi t}{P}\right) + \beta_5 \cos\left(\frac{4\pi t}{P}\right) + \epsilon$$
-
 - Ingeniería de Características: El tiempo lineal se transforma en un espacio cíclico mediante funciones trigonométricas (senos y cosenos representando armónicos de ciclos anuales y semestrales). Esto permite al algoritmo matemático comprender la periodicidad estacional del invierno.
 
 - Asignación de Pesos Estocásticos: Para proyectar el futuro sin caer en el sesgo de la "deuda inmunológica" del encierro, el modelo entrena con toda la historia disponible (excluyendo 2020-2022, años de pandemia y cuarentenas) pero aplica un multiplicador matricial estricto: la historia antigua (2014-2019) tiene un peso de 1x, mientras que los datos de la "nueva normalidad" (2023 en adelante) reciben un peso de 5x.
