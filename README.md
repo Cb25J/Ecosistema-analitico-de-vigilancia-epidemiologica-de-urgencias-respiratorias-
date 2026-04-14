@@ -88,7 +88,7 @@ El tiempo es tratado como una variable crítica para entender la dinámica de pr
 
 - Aislamiento de la Línea Base: Se determina analíticamente que el período 2014-2019 representa el comportamiento endémico "sano" (Línea Base). Los años 2020-2022 son excluidos de los patrones de normalidad debido a las anomalías estadísticas generadas por las cuarentenas.
 
-- Filtro Pasa-Bajos (Media Móvil): Dado que el registro semanal es estocástico y presenta alta volatilidad (ruido de fin de semana o reportes atrasados), el sistema aplica un algoritmo de Media Móvil Centrada parametrizable. Esto suaviza la curva y permite a la directiva observar el verdadero vector geométrico de crecimiento o descenso de un brote epidémico.
+- Filtro Media Móvil: Dado que el registro semanal es estocástico y presenta alta volatilidad (ruido de fin de semana o reportes atrasados), el sistema aplica un algoritmo de Media Móvil Centrada parametrizable. Esto suaviza la curva y permite a la directiva observar el verdadero vector geométrico de crecimiento o descenso de un brote epidémico.
 
 • Análisis Territorial
 
@@ -99,6 +99,10 @@ El tiempo es tratado como una variable crítica para entender la dinámica de pr
 • Modelo Predictivo
 
 Para dotar al sistema de capacidad prospectiva, se desarrolló un motor de Regresión Armónica Ponderada, diseñado específicamente para modelar epidemias respiratorias.
+
+La ecuación base del modelo es:
+
+$$y(t) = \beta_0 + \beta_1 t + \beta_2 \sin\left(\frac{2\pi t}{P}\right) + \beta_3 \cos\left(\frac{2\pi t}{P}\right) + \beta_4 \sin\left(\frac{4\pi t}{P}\right) + \beta_5 \cos\left(\frac{4\pi t}{P}\right) + \epsilon$$
 
 - Ingeniería de Características: El tiempo lineal se transforma en un espacio cíclico mediante funciones trigonométricas (senos y cosenos representando armónicos de ciclos anuales y semestrales). Esto permite al algoritmo matemático comprender la periodicidad estacional del invierno.
 
